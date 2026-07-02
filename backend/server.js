@@ -13,7 +13,7 @@ import analyticsRoutes from "./routes/analytics.route.js";
 import { connectDB } from "./lib/db.js";
 
 dotenv.config();
-
+console.log("JWT:", process.env.JWT_SECRET);
 const app = express();
 const PORT = process.env.PORT || 5000;
 
